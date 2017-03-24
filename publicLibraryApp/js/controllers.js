@@ -88,7 +88,7 @@ publicLibraryControllers.controller('BooksController',
         publisher: $scope.book.publisher
       }
     })
-      .success( function () { $location.path('/');})
+      .success( function () { $location.path('/showAllBooks');})
       .error( function (response){
         console.log(response);
         alert("OH! Book is NOT updated");
