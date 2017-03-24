@@ -1,0 +1,28 @@
+<form>
+    <h1>Public Library: List all books</h1>
+    <TABLE class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th><th>Author</th><th>Categories</th><th>Publisher</th><th>View Details</th>
+           <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="book in books">
+          <td>{{book.title}}</td><td>{{book.author}}</td><td>{{book.categories}}</td><td>{{book.publisher}}</td>
+          <td><a href="#/viewDetails"><button button class = "btn btn-primary" ng-click="viewDetails(this, $index)">View Details</button></a></td>
+          <td><a href="#/updateBook"><button button class = "btn btn-warning" ng-click="viewDetails(this, $index)">Update a Book</button></a></td>
+          <td><button button class = "btn btn-danger" ng-click="destroyBook(this, $index)">Delete a Book</button></td>
+        </tr>
+      </tbody>
+    </Table>
+</form>
+    <nav><br>
+      <a href="#/createBook"><button class = "btn btn-success">Add a new Book</button></a>
+      <button class = "btn btn-success" ng-click="clearDatabase()">Clear database</button>
+      <a href="#/main">Back to main menu</a>
+    </nav>
+
+
+

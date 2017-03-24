@@ -1,0 +1,42 @@
+<div ng-init="getAllBooks()">
+  <h1>Public Library: Update a book record</h1>
+<form>
+  <TABLE class="table table-striped">
+  <TR>
+  <TD>
+    Select Book
+   </TD>
+   <TD>
+        <select class="btn btn-primary dropdown-toggle" ng-model="book"
+                ng-options="(book.title + ' - ' + book.author) for book in books">
+          <option value="">Please Select a book to update</option>
+        </select>
+    </TD>
+  </TR>
+  <TR>
+    <TD>Title</TD>
+    <TD>
+      <input type="text" name="title" ng-model="book.title" />
+    </TD>
+  </TR>
+  <TR>
+    <TD>Author</TD>
+    <TD><input type="text" name="author" ng-model="book.author" /></TD>
+  </TR>
+  <TR>
+    <TD>Categories</TD>
+    <TD><input type="text" name="categories" ng-model="book.categories" /></TD>
+  </TR>
+  <TR>
+    <TD>Publisher</TD>
+    <TD><input type="text" name="publisher" ng-model="book.publisher" /></TD>
+  </TR>
+</TABLE>
+ </form>
+  <nav><br>
+      <button type="submit" class = "btn btn-success" name="commit" ng-click="updateBook()">
+          Save Changes
+        </button>
+      <a href="#/showAllBooks">Back to main menu</a>
+  </nav>
+</div>

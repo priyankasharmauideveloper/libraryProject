@@ -1,0 +1,71 @@
+<div ng-init="getAllBooks()">
+  <h1>Public Library: Delete a book record</h1>
+  <form>
+  <TABLE class="table table-striped">
+  <TR>
+    <TD>Title</TD>
+    <TD>
+      <output type="text" name="title" ng-bind="books.title" />
+    </TD>
+  </TR>
+  <TR>
+    <TD>Author</TD>
+    <TD><output type="text" name="author" ng-bind="books.author" /></TD>
+  </TR>
+  <TR>
+    <TD>Categories</TD>
+    <TD><output type="text" name="categories" ng-bind="books.categories" /></TD>
+  </TR>
+  <TR>
+    <TD>Publisher</TD>
+    <TD><output type="text" name="publisher" ng-bind="books.publisher" /></TD>
+  </TR>
+</TABLE>
+ </form>
+ <nav><br>
+         <button type="submit" name="commit" ng-click="destroyBook(books.url)">
+          Delete
+        </button>
+      <a href="#/showAllBooks">Back to main menu</a>
+  </nav>
+</div>
+ <!--  <form>
+      <label>Select book:
+        <select ng-model="book"
+                ng-options="(book.title  + ' - ' + book.author) for book in books">
+          <option value="">Please select a book to delete</option>
+        </select>
+      </label>
+    </div>
+    <div ng-show="book">
+      <div>
+        <label>title:
+          <output type="text" name="title" ng-bind="book.title" />
+        </label>
+      </div>
+      <div>
+        <label>author:
+          <output type="text" name="author" ng-bind="book.author" />
+        </label>
+      </div>
+      <div>
+        <label>categories:
+          <output type="number" name="categories" ng-bind="book.categories" />
+        </label>
+      </div>
+      <div>
+        <label>publisher:
+          <output type="number" name="categories" ng-bind="book.publisher" />
+        </label>
+      </div>
+      <div>
+        <button type="submit" name="commit" ng-click="destroyBook()">
+          Delete
+        </button>
+      </div>
+    </div>
+  </form>
+  <nav>
+    <a href="#/main">Back to main menu</a>
+  </nav>
+</div> -->

@@ -1,0 +1,17 @@
+
+h1{
+	color: #777;
+}
+FORM {
+    border: solid gray 2px;
+    padding: 3px;
+    background: #efe url(books_10.jpg);
+}
+.btnContainer button {
+    margin-top: 5px;
+}
+.listBooksContainer
+    border: solid gray 2px;
+    padding: 3px;
+    background: #efe url(books_10.jpg);
+}

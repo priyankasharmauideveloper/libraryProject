@@ -1,0 +1,11 @@
+{
+	"books": [{
+		"author": "Robert C. Martin",
+		"categories": "programming",
+		"lastCheckedOut": null,
+		"lastCheckedOutBy": null,
+		"publisher": "Prentice Hall",
+		"title": "Clean Code",
+		"url": "/book/44"
+	}]
+}
